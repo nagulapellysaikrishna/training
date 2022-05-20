@@ -1,0 +1,10 @@
+package com.service;
+
+import com.model.EmployeModel;
+
+public class AddEmployee {
+	public static void add(EmployeModel[] employees) {
+		int a = employees.length;
+		System.out.println(a);
+	}
+}

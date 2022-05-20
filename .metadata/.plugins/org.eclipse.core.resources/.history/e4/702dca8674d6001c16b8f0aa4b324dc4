@@ -1,0 +1,53 @@
+package com.main;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+import com.model.Address;
+import com.model.Department;
+
+import type;
+
+public class SetDemo {
+
+	private static final type Object = null;
+
+	public static void main(String[] args, Object object) {
+		Department department1 = new Department(10, "Developement");
+		Department department2 = new Department(11, "TESTING");
+		Department department3 = new Department(12, "CLOUD");
+		Department department4 = new Department(13, "ADMIN");
+		
+		Address address1 = new Address(12, "2nd", "Chennai");
+		
+		Set set = new HashSet();
+		System.out.println("set size : "+set.size());
+		set.add(department1);
+		set.add(department2);
+		set.add(department3);
+		set.add(department4);
+		set.add(address1);
+		
+		System.out.println("set size after add : "+set.size());
+		
+		for (Iterator iterator = set.iterator(); iterator.hasNext();) {
+			 object = (Object) iterator.next();
+			 if (object instanceof Department) {
+					Department new_name = (Department) object;
+
+					System.out.println(new_name.getDepId());
+					System.out.println(new_name.getDepName());
+				}
+			 
+			 if (object instanceof Address) {
+					Address new_name1 = (Address) object;
+
+					System.out.println(new_name1.getDepId());
+					System.out.println(new_name1.getDepName());
+				}
+		}
+
+	}
+
+}

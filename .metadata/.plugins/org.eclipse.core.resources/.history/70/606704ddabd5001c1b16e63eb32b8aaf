@@ -1,0 +1,37 @@
+package com.service;
+
+import com.model.Calculator;
+
+public class CalculatorService implements Calculator {
+
+	@Override
+	public int add(int num1, int num2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int sub(int num1, int num2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int multiply(int num1, int num2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int division(int num1, int num2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int remainder(int num1, int num2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

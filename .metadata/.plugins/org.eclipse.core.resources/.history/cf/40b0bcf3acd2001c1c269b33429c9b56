@@ -1,0 +1,36 @@
+package com.model;
+
+public class MyinterfaceImp1 {
+
+	public int add(int a, int b) {
+		return a + b;
+	}
+
+	public int sub(int a, int b) {
+		return a - b;
+	}
+
+	public int multiply(int a, int b) {
+		return a * b;
+	}
+
+	public int div(int a, int b) {
+		return a / b;
+	}
+
+	public int remainder(int a, int b) {
+		return a % b;
+	}
+
+
+
+	public float cubrt(int a,int b) {
+		double i = 0, precision = 0.001;
+		
+		for (int i1 = 1; (Math.pow(i1,b)) <= a; ++i1) {
+			for (--i; (Math.pow(i,b)) < a; i += precision) {
+			}
+		}
+		return (float) i;
+	}
+}

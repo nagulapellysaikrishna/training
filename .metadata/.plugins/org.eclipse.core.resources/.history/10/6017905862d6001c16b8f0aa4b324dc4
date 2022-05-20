@@ -1,0 +1,29 @@
+package com.service;
+
+import java.util.Scanner;
+
+import com.model.EmployeModel;
+
+public class AddEmployee {
+	public static void add(EmployeModel[] employees) {
+		Scanner sc = new Scanner(System.in);
+		int count=0;
+		int noOfEmployees = employees.length+employees.length;
+		try {
+			System.out.print("Enter Employe ID : ");
+			int employeeId1 = sc.nextInt();
+			System.out.print("Enter Employee Name : ");
+			String employeeName1 = sc.next();
+			System.out.print("Enter Employee Salary : ");
+			float employeeSalary1 = sc.nextFloat();
+			EmployeModel[] employees1 = new EmployeModel[noOfEmployees];
+			EmployeModel employee2 = new EmployeModel(employeeId1, employeeName1, employeeSalary1);
+			
+			employees1[count] = employee2;
+			count++;
+		} catch (ArrayIndexOutOfBoundsException e) {
+			e.getMessage();
+		}
+		
+	}
+}

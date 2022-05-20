@@ -1,0 +1,43 @@
+package com.model;
+
+public class Colleges {
+	private String collegeName;
+	private int collegeID;
+	private String address;
+	private Departments Departments;
+	public Colleges(String collegeName, int collegeID, String address, com.model.Departments departments) {
+		super();
+		this.collegeName = collegeName;
+		this.collegeID = collegeID;
+		this.address = address;
+		Departments = departments;
+	}
+	public Colleges() {
+		super();
+		
+	}
+	public Departments getDepartments() {
+		return Departments;
+	}
+	public void setDepartments(Departments departments) {
+		Departments = departments;
+	}
+	public String getCollegeName() {
+		return collegeName;
+	}
+	public void setCollegeName(String collegeName) {
+		this.collegeName = collegeName;
+	}
+	public int getCollegeID() {
+		return collegeID;
+	}
+	public void setCollegeID(int collegeID) {
+		this.collegeID = collegeID;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+}

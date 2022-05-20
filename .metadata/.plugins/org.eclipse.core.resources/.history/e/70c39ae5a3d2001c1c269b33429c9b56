@@ -1,0 +1,38 @@
+package com.model;
+
+public class MyinterfaceImp1{
+
+	public int add(int a, int b) {
+		return a+b;
+	}
+
+	public int sub(int a, int b) {
+		return a-b;
+	}
+
+	public int multiply(int a, int b) {
+		return a*b;
+	}
+
+	public int div(int a, int b) {
+		return a/b;
+	}
+
+	public int remainder(int a, int b) {
+		return a%b;
+	}
+	public double sqrt(int a) {
+		double squareroot, temp;
+		squareroot = a/2;
+		do {
+			temp = squareroot;
+			System.out.println("Temp:"+temp);
+			squareroot = (temp + (a/temp))/2;
+			System.out.println((temp + (a/temp))/2);
+			
+		} while (temp-squareroot != 0);
+		
+		return squareroot;
+		
+	}
+}

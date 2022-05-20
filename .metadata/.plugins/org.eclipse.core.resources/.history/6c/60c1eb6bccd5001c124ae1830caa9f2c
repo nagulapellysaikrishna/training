@@ -1,0 +1,19 @@
+package com.main;
+
+import com.expections.ManualExpections1;
+import com.service.CalaculatorServiceImpl;
+import com.service.CalculatorService;
+
+public class CalculatorMain {
+
+	public static void main(String[] args) {
+
+		int num1 = 2;
+		int num2 = 1;
+		CalculatorService calculatorService = new CalaculatorServiceImpl();
+		System.out.println(calculatorService.add(num1, num2));
+		
+	
+	}
+
+}

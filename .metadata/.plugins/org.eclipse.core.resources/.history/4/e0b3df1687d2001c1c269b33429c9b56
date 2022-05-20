@@ -1,0 +1,12 @@
+package com.main;
+
+import com.model.MyInterface;
+import com.model.MyinterfaceImp1;
+
+public class MainApp {
+ public static void main(String[] args) {
+	//interfacename var = new InterfaceImp1()
+	 MyInterface myInterface = new MyinterfaceImp1();
+	 System.out.println(myInterface.add(4,6));
+ }
+}

@@ -1,0 +1,14 @@
+package com.expections;
+
+public class ManualExpections1{
+	public static int checkNum(int n1,int n2) {
+		int result = 0;
+		if (n2<1 || n1<1) {
+			throw new ArithmeticException("Number must be greater than 1");
+		}else {
+			result = n1/n2;
+		}
+		return result;
+	}
+	
+}

@@ -1,0 +1,12 @@
+package com.expections;
+
+public class ManualExpections1 extends Exception {
+	public static void checkNum(int n) {
+		if (n<1) {
+			throw new ArithmeticException("Error");
+		}else {
+			System.out.println("Success");
+		}
+	}
+	
+}

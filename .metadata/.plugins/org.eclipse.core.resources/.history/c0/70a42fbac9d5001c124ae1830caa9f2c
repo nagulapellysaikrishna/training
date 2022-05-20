@@ -1,0 +1,10 @@
+package com.expections;
+
+public class ManualExpections1{
+	
+	
+	throw new ManualExpections1("Number must be greater than 1");
+		
+	}
+	
+

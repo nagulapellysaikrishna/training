@@ -1,0 +1,27 @@
+package com.model;
+
+public class University {
+	private String universityName;
+	private Colleges Colleges;
+	public University() {
+		super();
+		
+	}
+	public String getUniversityName() {
+		return universityName;
+	}
+	public void setUniversityName(String universityName) {
+		this.universityName = universityName;
+	}
+	public Colleges getColleges() {
+		return Colleges;
+	}
+	public void setColleges(Colleges colleges) {
+		Colleges = colleges;
+	}
+	public University(String universityName, com.model.Colleges colleges) {
+		super();
+		this.universityName = universityName;
+		Colleges = colleges;
+	}
+}

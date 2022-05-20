@@ -1,0 +1,13 @@
+package com.service;
+
+import com.model.EmployeModel;
+
+public class EmployeeRead {	
+	public   void update(EmployeModel[] employeModel1) {
+		for (int i = 0; i < employeModel1.length; i++) {
+				System.out.println("Employee Id : "+employeModel1[i].getEmployeeId());
+				System.out.println("Employee Name : "+employeModel1[i].getEmployeName());
+				System.out.println("Employee Salary : "+employeModel1[i].getSalary());
+			}
+	}
+	}

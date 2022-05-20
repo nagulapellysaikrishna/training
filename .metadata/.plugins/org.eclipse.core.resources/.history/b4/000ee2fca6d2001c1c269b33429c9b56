@@ -1,0 +1,46 @@
+package com.model;
+
+public class MyinterfaceImp1 {
+
+	public int add(int a, int b) {
+		return a + b;
+	}
+
+	public int sub(int a, int b) {
+		return a - b;
+	}
+
+	public int multiply(int a, int b) {
+		return a * b;
+	}
+
+	public int div(int a, int b) {
+		return a / b;
+	}
+
+	public int remainder(int a, int b) {
+		return a % b;
+	}
+
+	public double sqrt(int a) {
+		double squareroot, temp;
+		squareroot = a / 2;
+		do {
+			temp = squareroot;
+			squareroot = (temp + (a / temp)) / 2;
+		} while (temp - squareroot != 0);
+
+		return squareroot;
+
+	}
+
+	public float cubrt(int a) {
+		double i = 0, precision = 0.000001;
+		for (int i1 = 1; (i1 * i1 * i1) <= a; ++i1) {
+			for (--i; (i * i * i) < a; i += precision) {
+			}
+		}
+		return (float) i;
+
+	}
+}

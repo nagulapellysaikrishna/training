@@ -1,0 +1,17 @@
+package com.service;
+
+import com.model.EmployeModel;
+
+public class EmployeeDelete {
+ public void delete(EmployeModel[] employees,int id) {
+	 for (int i = 0; i < employees.length; i++) {
+			if (employees[i].getEmployeeId() == id) {
+				employees[i]=null;
+			}else {
+				System.out.println("Given empoyee is not in the list");
+			}
+		}
+ }
+
+
+}

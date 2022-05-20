@@ -1,0 +1,17 @@
+package com.main;
+
+import java.util.Scanner;
+
+public class Qestion2Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("First Number : ");
+		int firstNumber = sc.nextInt();
+		System.out.print("Second Number : ");
+		int secondNumber = sc.nextInt();
+		
+
+	}
+
+}

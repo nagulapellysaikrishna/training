@@ -1,0 +1,6 @@
+package com.model;
+
+public interface ScientificCal {
+	public abstract int remainder(int a, int b);
+	
+}

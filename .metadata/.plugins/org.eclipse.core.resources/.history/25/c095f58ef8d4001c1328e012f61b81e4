@@ -1,0 +1,15 @@
+package com.model;
+
+public class EmployeModel {
+	private Object employeeId;
+	private Object employeName;
+	private float salary;
+
+	public EmployeModel(int empNo, String empName,float salary) { //parameter constructor (constructor overloading)
+		this.employeeId = employeeId;
+		this.employeName = employeName;
+		this.salary = salary;
+	}
+	
+	
+}

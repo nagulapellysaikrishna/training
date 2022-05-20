@@ -1,0 +1,18 @@
+package com.main;
+
+import java.util.Scanner;
+
+public class Question6 {
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Letter : ");
+		char ch = (char) sc.nextShort();
+		int asciValue = ch;
+		int ch1 = 'd';
+		sc.close();
+		System.out.println("ASCII VALUE OF GIVEN LETTER IS "+ch1);
+	}
+
+}

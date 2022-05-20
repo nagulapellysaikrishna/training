@@ -1,0 +1,14 @@
+
+public class Partice {
+
+	public static void main(String[] args) {
+		int a = 30;
+		int sum = 0;
+		for (int i = 1; i < a ; i++) {
+			sum = i*i;
+			System.out.println(sum);
+		}
+		System.out.println(sum);
+	}
+
+}

@@ -1,0 +1,96 @@
+package com.main;
+import com.model.*;
+import java.util.Scanner;
+
+public class EmployeeMain {
+
+
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("How many Employees do you wanna add : ");
+		int noOfEmployees = sc.nextInt();
+		EmployeModel[] employees  = new EmployeModel[noOfEmployees];
+		
+			System.out.print("Enter Employe ID : " );
+			int employeeId = sc.nextInt();
+			System.out.print("Enter Employee Name : " );
+			String employeeName = sc.next();
+			System.out.print("Enter Employee Salary : ");
+			float employeeSalary =  sc.nextFloat();
+			
+			EmployeModel employee1 = new EmployeModel(employeeId,employeeName,employeeSalary);
+			//System.out.println(employee1.getEmployeName());
+			
+			employees[0]= employee1;
+
+		System.out.println("what to what to do : create=1/read=2/update=3/delete=4");
+		int operation = sc.nextInt();
+		
+		switch (operation) {
+		case 1 :
+			noOfEmployees+=1;
+			System.out.print("Enter Employe ID : " );
+			int employeeId1 = sc.nextInt();
+			System.out.print("Enter Employee Name : " );
+			String employeeName1 = sc.next();
+			System.out.print("Enter Employee Salary : ");
+			float employeeSalary1 =  sc.nextFloat();
+			
+			EmployeModel employee2 = new EmployeModel(employeeId1,employeeName1,employeeSalary1);
+			employees[1]= employee2;
+			break;
+			
+		case 2:
+			System.out.print("Which Employee do you want print(employeeId) : ");
+			int readEmployee = sc.nextInt();
+			for (int i = 0; i < employees.length; i++) {
+				if (employees[i].getEmployeeId() == readEmployee) {
+					System.out.println("Employee Id : "+employees[i].getEmployeeId());
+					System.out.println("Employee Name : "+employees[i].getEmployeName());
+					System.out.println("Employee Salary : "+employees[i].getSalary());
+				}else {
+					System.out.println("Given empoyee is not in the list");
+				}
+			}
+			
+			break;
+			
+		case 3 :
+			System.out.print("Which Employee do you want update(employeeId) : ");
+			int updateval = sc.nextInt();
+			for (int i = 0; i < employees.length; i++) {
+				if (employees[i].getEmployeeId() == updateval) {
+					System.out.print("Enter Employe ID : " );
+					int employeeId3 = sc.nextInt();
+					System.out.print("Enter Employee Name : " );
+					String employeeName3 = sc.next();
+					System.out.print("Enter Employee Salary : ");
+					float employeeSalary3 =  sc.nextFloat();
+					EmployeModel employee3 = new EmployeModel(employeeId3,employeeName3,employeeSalary3);
+					employees[1]= employee3;
+				}else {
+					System.out.println("Given empoyee is not in the list");
+				}
+			}
+			
+			break;
+		case 4:
+			System.out.print("Which Employee do you want Delete(employeeId) : ");
+			int deleteId = sc.nextInt();
+			for (int i = 0; i < employees.length; i++) {
+				if (employees[i].getEmployeeId() == deleteId) {
+					employees[i]=null;
+				}else {
+					System.out.println("Given empoyee is not in the list");
+				}
+			}
+
+		default:
+			break;
+		}
+		
+	}
+
+}

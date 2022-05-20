@@ -1,0 +1,15 @@
+package com.service;
+
+import com.model.EmployeModel;
+
+public class AddEmployee {
+	public static void add(EmployeModel[] employees) {
+		int noOfEmployees = employees.length+employees.length;
+		try {
+			EmployeModel[] employees1 = new EmployeModel[noOfEmployees];
+			
+		} catch (ArrayIndexOutOfBoundsException e) {
+			e.getMessage();
+		}
+	}
+}

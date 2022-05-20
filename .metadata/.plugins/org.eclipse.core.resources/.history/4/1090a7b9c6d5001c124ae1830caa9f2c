@@ -1,0 +1,18 @@
+package com.main;
+
+import java.util.Scanner;
+import com.service.CalaculatorServiceImpl;
+import com.service.CalculatorService;
+
+public class CalculatorMain {
+
+	public static void main(String[] args) {
+
+		int num1 = 1;
+		int num2 = 2;
+		CalculatorService calculatorService = new CalaculatorServiceImpl();
+		System.out.println(calculatorService.division(num1, num2));
+	
+	}
+
+}

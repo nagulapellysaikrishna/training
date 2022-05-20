@@ -1,0 +1,10 @@
+package com.expections;
+
+import java.io.IOException;
+
+class M{
+	 void method()throws IOException{
+	  System.out.println("device operation performed");
+	 }
+	}
+

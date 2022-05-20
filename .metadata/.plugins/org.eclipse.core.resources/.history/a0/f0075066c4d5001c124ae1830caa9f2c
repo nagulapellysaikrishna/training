@@ -1,0 +1,13 @@
+package com.expections;
+
+public class ArithmeticException {
+		public static void checkNum(int num) {  
+	        if (num < 1) {  
+	            throw new ArithmeticException("Number is negative, cannot calculate square");  
+	        }  
+	        else {  
+	            System.out.println("Square of " + num + " is " + (num*num));  
+	        }  
+	    }
+	}
+

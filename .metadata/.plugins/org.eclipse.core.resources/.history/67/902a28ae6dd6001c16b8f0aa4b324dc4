@@ -1,0 +1,28 @@
+package com.main;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import com.model.Department;
+
+public class SetDemo {
+
+	public static void main(String[] args) {
+		Department department1 = new Department(10, "Developement");
+		Department department2 = new Department(11, "TESTING");
+		Department department3 = new Department(12, "CLOUD");
+		Department department4 = new Department(13, "ADMIN");
+		
+		Set set = new HashSet();
+		set.add(department1);
+		set.add(department2);
+		set.add(department3);
+		set.add(department4);
+		set.add(department1);
+		
+		
+		System.out.println(set.size());
+
+	}
+
+}

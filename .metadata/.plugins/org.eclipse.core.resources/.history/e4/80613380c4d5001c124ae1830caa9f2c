@@ -1,0 +1,22 @@
+package com.main;
+
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
+import com.service.CalaculatorServiceImpl;
+import com.service.CalculatorService;
+
+public class CalculatorMain {
+
+	   public static void main(String args[]){  
+	        try  
+	        {  
+	        	ArithmeticException.method();  
+	        }   
+	        catch (FileNotFoundException e)   
+	        {  
+	            e.printStackTrace();  
+	        }  
+	        System.out.println("rest of the code...");    
+	  }    
+	}    

@@ -1,0 +1,9 @@
+package com.expections;
+
+
+public class ManualExpections1{
+	 public static void method()throws ArithmeticException {
+	  System.out.println("sai");
+	 }
+	}
+

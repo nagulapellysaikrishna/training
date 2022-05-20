@@ -1,0 +1,12 @@
+package com.expections;
+
+
+public class ManualExpections1{
+	 public void method()throws ArithmeticException {
+	  System.err.println("error");
+	 }
+	 public void add()throws ArithmeticException {
+		  System.out.println("Number must be great than 1");
+		 }
+	}
+

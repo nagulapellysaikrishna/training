@@ -1,0 +1,7 @@
+package com.model;
+
+import java.net.InterfaceAddress;
+
+public class MyClassImp1 extends InterfaceAddress {
+
+}

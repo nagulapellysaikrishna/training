@@ -1,0 +1,66 @@
+package com.main;
+import com.model.*;
+import java.util.Scanner;
+
+public class EmployeeMain {
+
+
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("How many Employees do you wanna add : ");
+		int noOfEmployees = sc.nextInt();
+		EmployeModel[] employees  = new EmployeModel[noOfEmployees];
+		for (int i = 0; i < noOfEmployees; i++) {
+			System.out.print("Enter Employe ID : " );
+			int employeeId = sc.nextInt();
+			System.out.print("Enter Employee Name : " );
+			String employeeName = sc.next();
+			System.out.print("Enter Employee Salary : ");
+			float employeeSalary =  sc.nextFloat();
+			
+			EmployeModel employee1 = new EmployeModel(employeeId,employeeName,employeeSalary);
+			//System.out.println(employee1.getEmployeName());
+			
+			employees[i]= employee1;
+			
+		}
+		System.out.println("what to what to do : create/read/update/delete");
+		String operation = sc.next();
+		
+		switch (operation) {
+		case "add" :
+			noOfEmployees+=1;
+			System.out.print("Enter Employe ID : " );
+			int employeeId = sc.nextInt();
+			System.out.print("Enter Employee Name : " );
+			String employeeName = sc.next();
+			System.out.print("Enter Employee Salary : ");
+			float employeeSalary =  sc.nextFloat();
+			
+			EmployeModel employee1 = new EmployeModel(employeeId,employeeName,employeeSalary);
+			employees[noOfEmployees]= employee1;
+			break;
+			
+			
+//		case upadate:
+//			noOfEmployees+=1;
+//			System.out.print("Enter Employe ID : " );
+//			int employeeId = sc.nextInt();
+//			System.out.print("Enter Employee Name : " );
+//			String employeeName = sc.next();
+//			System.out.print("Enter Employee Salary : ");
+//			float employeeSalary =  sc.nextFloat();
+//			
+//			EmployeModel employee1 = new EmployeModel(employeeId,employeeName,employeeSalary);
+//			employees[noOfEmployees+1]= employee1;
+//			break;
+
+		default:
+			break;
+		}
+		
+	}
+
+}
